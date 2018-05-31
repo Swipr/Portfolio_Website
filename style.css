@@ -1,0 +1,247 @@
+/**-------------------------------------------------------------
+----------------------------------------------------------------
+[Table of contents]
+
+1. BODY AND GENERAL STYLES
+2. NAVBAR
+3. NAVBAR TOGGLER
+4. HAMBURGER MENU
+5. MAIN CONTENT
+6. FOOTER
+7. RESPONSIVE STYLES
+
+-------------------------------------------------------------**/
+
+/**-------------------------------------------------------------
+[1. Body and general styles]
+-------------------------------------------------------------**/
+body {
+    background: #272727;
+    width: 100%;
+    line-height: 1;
+    color: gray;
+    font-family: 'PT Sans', sans-serif;
+    }
+
+a, p {
+    color: white;
+    }
+
+ a > img {
+    height: 200px;
+    width: 100%;
+    }
+
+h6 {
+    color: white;
+    }
+/**-------------------------------------------------------------
+[2. NAVBAR]
+-------------------------------------------------------------**/
+.main-header {
+    padding: 35px;
+    border-bottom: 1px solid gray;
+    }
+
+.nav-top {
+    display: table;
+    }
+
+.nav-logo, .navbar-toggler {
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+    }
+
+.logo-link {
+    max-width: 75px;
+    max-height: 75px;
+    }
+.nav-top .navbar-toggler {
+    width: 64px;
+    height: 64px;
+    }
+/**-------------------------------------------------------------
+[3. NAVBAR TOGGLER]
+-------------------------------------------------------------**/
+/* https://www.codeply.com/go/Uo1Qn6D7R9/bootstrap-4-navbar-animated-toggle-hamburger-close */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+    }
+
+.navbar-toggler span {
+   display: block;
+   background-color: white;
+   height: 1px;
+   width: 35px;
+   margin-top: 9px;
+   margin-bottom: 9px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+   z-index: 3;
+    }
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+    }
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: relative;
+    top: 14px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    }
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    background-color: transparent;
+    }
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: relative;
+    top: -17px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+/**-------------------------------------------------------------
+[4. HAMBURGER MENU]
+-------------------------------------------------------------**/
+.hamburger-menu {
+    position: fixed;
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(img/1510_21_web_Full.jpg);
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    }
+
+.list-top-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    }
+
+.list-top-menu > li {
+    margin-bottom: 20px;
+    }
+
+.list-top-menu > li a {
+    font-family: 'Prime_Regular', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.34375rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #F0E68C;
+    }
+/**-------------------------------------------------------------
+[5. MAIN CONTENT]
+-------------------------------------------------------------**/
+.jumbotron {
+    background-image: linear-gradient(to top, rgba(39,39,39,1) 0%,rgba(39,39,39,0.95) 26%,rgba(39,39,39,0.6) 100%), url(img/bg3_Full.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 30px;
+    padding: 48px;
+    text-align: center;
+    color: #F0E68C;
+    }
+
+.jumbo-text {
+    padding-top: 50px;
+    }
+
+article {
+    transition: all 0.2s ease-in-out;
+    }
+
+article:hover {
+    transform: scale(1.05);
+    }
+
+.card:hover {
+    border: 2px solid rgb(2, 179, 228);
+    }
+
+h5 {
+    color: white;
+    padding-top: 4px;
+    }
+
+.p-secondary {
+    color: gray;
+    font-style: italic;
+    }
+/**-------------------------------------------------------------
+[6. FOOTER]
+-------------------------------------------------------------**/
+footer {
+    margin-top: 80px;
+    text-align: center;
+    }
+
+.link {
+    color: #02b3e4 ;
+    }
+/**-------------------------------------------------------------
+[7. RESPONSIVE STYLES]
+-------------------------------------------------------------**/
+@media screen and (max-width: 360px ) {
+    .main-header {
+        padding: 10px;
+        left: 0;
+    }
+
+    .hamburger-menu {
+        background-image: url(img/1510_21_web_S.jpg);
+    }
+
+    .jumbotron {
+        margin-top: 30px;
+        padding: 16px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+    }
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        padding-bottom: 20px;
+    }
+
+    .logo-link {
+        margin-top: 8px;
+        max-width: 58px;
+        max-height: 58px;
+    }
+
+    .jumbotron {
+        background-image: linear-gradient(to top, rgba(39,39,39,1) 0%,rgba(39,39,39,0.95) 26%,rgba(39,39,39,0.6) 100%), url(img/bg3_S.jpg);
+    }
+
+     article:hover {
+        transform: none;
+    }
+    }
