@@ -1,6 +1,6 @@
 
 # Description
----
+
 &nbsp;
 
 ### A portfolio website.
@@ -9,7 +9,7 @@
 &nbsp;
 
 # How-to
----
+
 &nbsp;
 
  - Clone this git repository or download it
@@ -17,7 +17,7 @@
 &nbsp;
 
 # Cool extras used
----
+
 &nbsp;
 &nbsp;
 
