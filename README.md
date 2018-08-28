@@ -4,6 +4,10 @@
 &nbsp;
 
 ### A portfolio website.
+
+For this project, you'll be building a portfolio website. You will be provided a design mockup as a PDF-file, and you must replicate that design in HTML and CSS.
+
+
 *This is project 2 of the [Udacity Full Stack Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) course.*
 
 &nbsp;
